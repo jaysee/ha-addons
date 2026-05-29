@@ -1,3 +1,5 @@
+name: GPS Tracker
+description: Stellt einen USB-GPS-Empfänger als device_tracker-Entität mit vollständiger Telemetrie bereit.
 configuration:
   device:
     name: GPS-Gerät
