@@ -1,0 +1,35 @@
+name: GPS Tracker
+description: Expose a USB GPS receiver as a device_tracker entity with full telemetry
+version: 0.1.9
+slug: gps_tracker
+url: https://github.com/jaysee/ha-addons/gps_tracker
+arch:
+  - aarch64
+  - armv7
+  - armhf
+  - amd64
+startup: services
+boot: auto
+init: false
+homeassistant_api: true
+devices:
+  - /dev/ttyUSB0
+  - /dev/ttyACM0
+  - /dev/ttyACM1
+  - /dev/ttyACM2
+  - /dev/ttyACM3
+  - /dev/ttyACM4
+options:
+  device: /dev/ttyACM0
+  baud: 9600
+  entity_name: gps_vehicle
+  update_interval: 5
+  min_distance: 10
+  log_level: info
+schema:
+  device: device
+  baud: int
+  entity_name: str
+  update_interval: int
+  min_distance: int
+  log_level: list(debug|info|warning|error|critical)
