@@ -1,0 +1,19 @@
+configuration:
+  device:
+    name: Périphérique GPS
+    description: Port série du récepteur GPS. Utilisez un chemin stable /dev/serial/by-id/... pour éviter les changements de chemin au redémarrage.
+  baud:
+    name: Vitesse (baud)
+    description: Vitesse de communication série en bps. La plupart des récepteurs GPS utilisent 9600 par défaut.
+  entity_name:
+    name: Nom de l'entité
+    description: "Nom de l'entité device_tracker créée dans HA : device_tracker.<entity_name>."
+  update_interval:
+    name: Intervalle de mise à jour (secondes)
+    description: Temps minimum en secondes entre deux mises à jour envoyées à Home Assistant.
+  min_distance:
+    name: Distance minimale (mètres)
+    description: Déplacement minimum en mètres depuis la dernière mise à jour avant d'en envoyer une nouvelle. Mettre à 0 pour envoyer à chaque intervalle.
+  log_level:
+    name: Niveau de log
+    description: Verbosité des logs de l'addon. Utilisez 'debug' pour voir chaque requête HTTP et phrase NMEA.

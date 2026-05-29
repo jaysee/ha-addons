@@ -1,0 +1,19 @@
+configuration:
+  device:
+    name: GPS-Gerät
+    description: Serieller Port des GPS-Empfängers. Verwenden Sie einen stabilen /dev/serial/by-id/...-Pfad, um Pfadänderungen beim Neustart zu vermeiden.
+  baud:
+    name: Baudrate
+    description: Serielle Übertragungsgeschwindigkeit in bps. Die meisten GPS-Empfänger verwenden standardmäßig 9600.
+  entity_name:
+    name: Entitätsname
+    description: "Name der in HA erstellten device_tracker-Entität: device_tracker.<entity_name>."
+  update_interval:
+    name: Aktualisierungsintervall (Sekunden)
+    description: Minimale Zeit in Sekunden zwischen zwei Statusaktualisierungen an Home Assistant.
+  min_distance:
+    name: Mindestabstand (Meter)
+    description: Minimale Bewegung in Metern seit der letzten Aktualisierung, bevor eine neue gesendet wird. Auf 0 setzen, um bei jedem Intervall zu senden.
+  log_level:
+    name: Protokollstufe
+    description: Ausführlichkeit der Addon-Protokolle. Verwenden Sie 'debug', um jede HTTP-Anfrage und jeden NMEA-Satz zu sehen.

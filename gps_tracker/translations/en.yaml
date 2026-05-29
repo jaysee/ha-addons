@@ -1,0 +1,19 @@
+configuration:
+  device:
+    name: GPS Device
+    description: Serial port of the GPS receiver. Use a stable /dev/serial/by-id/... path to avoid path changes on reboot.
+  baud:
+    name: Baud Rate
+    description: Serial communication speed in bps. Most GPS receivers default to 9600.
+  entity_name:
+    name: Entity Name
+    description: "Name of the device_tracker entity created in HA: device_tracker.<entity_name>."
+  update_interval:
+    name: Update Interval (seconds)
+    description: Minimum time in seconds between two state updates sent to Home Assistant.
+  min_distance:
+    name: Minimum Distance (meters)
+    description: Minimum movement in meters since last update before sending a new one. Set to 0 to always send at every interval.
+  log_level:
+    name: Log Level
+    description: Verbosity of the addon logs. Use 'debug' to see every HTTP request and NMEA sentence.

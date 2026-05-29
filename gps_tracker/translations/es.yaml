@@ -1,0 +1,19 @@
+configuration:
+  device:
+    name: Dispositivo GPS
+    description: Puerto serie del receptor GPS. Use una ruta estable /dev/serial/by-id/... para evitar cambios de ruta al reiniciar.
+  baud:
+    name: Velocidad (baudios)
+    description: Velocidad de comunicación serie en bps. La mayoría de los receptores GPS usan 9600 por defecto.
+  entity_name:
+    name: Nombre de entidad
+    description: "Nombre de la entidad device_tracker creada en HA: device_tracker.<entity_name>."
+  update_interval:
+    name: Intervalo de actualización (segundos)
+    description: Tiempo mínimo en segundos entre dos actualizaciones enviadas a Home Assistant.
+  min_distance:
+    name: Distancia mínima (metros)
+    description: Movimiento mínimo en metros desde la última actualización antes de enviar una nueva. Poner 0 para enviar en cada intervalo.
+  log_level:
+    name: Nivel de registro
+    description: Nivel de detalle de los registros del addon. Use 'debug' para ver cada solicitud HTTP y frase NMEA.
