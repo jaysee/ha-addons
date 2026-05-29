@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.2.2
+
+- Remove icon option (no native icon picker in addon schema)
+
+## 0.2.1
+
+- Add icon option (reverted in 0.2.2)
+
 ## 0.2.0
 
 - Add icon and logo
