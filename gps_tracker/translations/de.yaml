@@ -16,6 +16,9 @@ configuration:
   min_distance:
     name: Mindestabstand (Meter)
     description: Minimale Bewegung in Metern seit der letzten Aktualisierung, bevor eine neue gesendet wird. Auf 0 setzen, um bei jedem Intervall zu senden.
+  icon:
+    name: Icon
+    description: MDI-Symbol für die Entität (z.B. mdi:car, mdi:truck, mdi:motorbike, mdi:bicycle). Icons auf materialdesignicons.com durchsuchen.
   log_level:
     name: Protokollstufe
     description: Ausführlichkeit der Addon-Protokolle. Verwenden Sie 'debug', um jede HTTP-Anfrage und jeden NMEA-Satz zu sehen.

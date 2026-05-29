@@ -1,6 +1,6 @@
 name: GPS Tracker
 description: Expose a USB GPS receiver as a device_tracker entity with full telemetry
-version: 0.2.0
+version: 0.2.1
 slug: gps_tracker
 url: https://github.com/jaysee/ha-addons/tree/main/gps_tracker
 arch:
@@ -23,6 +23,7 @@ options:
   device: /dev/ttyACM0
   baud: 9600
   entity_name: gps_vehicle
+  icon: mdi:car
   update_interval: 5
   min_distance: 10
   log_level: info
@@ -30,6 +31,7 @@ schema:
   device: device
   baud: int
   entity_name: str
+  icon: str
   update_interval: int
   min_distance: int
   log_level: list(debug|info|warning|error|critical)

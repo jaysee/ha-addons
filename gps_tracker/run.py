@@ -84,6 +84,7 @@ def main():
     entity_name = opts.get("entity_name", "gps_vehicle")
     update_interval = opts.get("update_interval", 5)
     min_distance = opts.get("min_distance", 10)
+    icon = opts.get("icon", "mdi:car")
     log_level = opts.get("log_level", "info").upper()
     logging.basicConfig(
         level=getattr(logging, log_level, logging.INFO),
@@ -187,6 +188,7 @@ def main():
                         if moved:
                             attrs = {k: v for k, v in gps.items() if v is not None}
                             attrs["friendly_name"] = entity_name.replace("_", " ").title()
+                            attrs["icon"] = icon
                             post_state(entity_name, attrs)
                             log.info(
                                 "lat=%.6f lon=%.6f alt=%sm speed=%skm/h heading=%s° sats=%s/%s fix=%s",
