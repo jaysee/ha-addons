@@ -1,6 +1,6 @@
 name: GPS Tracker
 description: Expose a USB GPS receiver as a device_tracker entity with full telemetry
-version: 0.1.9
+version: 0.2.0
 slug: gps_tracker
 url: https://github.com/jaysee/ha-addons/gps_tracker
 arch:
