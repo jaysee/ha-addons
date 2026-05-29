@@ -16,9 +16,6 @@ configuration:
   min_distance:
     name: Minimum Distance (meters)
     description: Minimum movement in meters since last update before sending a new one. Set to 0 to always send at every interval.
-  icon:
-    name: Icon
-    description: MDI icon for the entity (e.g. mdi:car, mdi:truck, mdi:motorbike, mdi:bicycle). Browse icons at materialdesignicons.com.
   log_level:
     name: Log Level
     description: Verbosity of the addon logs. Use 'debug' to see every HTTP request and NMEA sentence.
