@@ -1,5 +1,7 @@
 # GPS Tracker
 
+![Logo](logo.png)
+
 Reads NMEA sentences from a USB GPS receiver and publishes a `device_tracker` entity in Home Assistant with full telemetry: position, altitude, speed, heading, satellite count, fix quality, and accuracy estimate.
 
 ## Requirements
